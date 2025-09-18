@@ -14,8 +14,9 @@ public class BankService {
 		   }
 		   catch(BankValidationException e)
 		   { 
-			   return false;
+			   System.out.println(e);
 	   }
+		   return false;
    }
 }
    public void calculate(float principal,int tenure,int age,String gender) {
